@@ -16,7 +16,7 @@
   Human Interface Technology-inspired, yet fully agnostic to any specific framework.
 
 * **Standards-Driven**
-  Aligns with CRISP-DM & CRISP-ML(Q) phases, LangChain patterns, Model Context Protocol (MCP) and other standars.
+  Aligns with CRISP-DM & CRISP-ML(Q) phases, LangChain patterns, Model Context Protocol (MCP) and other standards.
 
 * **Node-Based**
   Build pipelines by snapping together reusable, well-tested nodes (`fit`/`transform`/`predict` interfaces).
