@@ -2,7 +2,7 @@
 > **Modular, standards-first node library for ML & GenAI pipelines.**
 
 <p align="center">
-<img src="./docs/logo_1_small.png" width="200">
+<img src="./docs/images/logo_1_small.png" width="200">
 </p>
 
 
