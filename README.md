@@ -1,5 +1,13 @@
 # 🧬 HITnode 
-> **Modular, standards-first node library for Data Science ML & GenAI pipelines.**
+> **Modular, standards-first node library for ML & GenAI pipelines.**
+
+<p align="center">
+<img src="./docs/logo_1_small.png" width="200">
+</p>
+
+
+*Author: nmc-costa*
+
 
 
 ## 📌 Key Highlights
@@ -103,10 +111,10 @@ business_understanding/          # Domain METADATA: Business objectives and stak
 
 data_understanding/              # Data exploration and automated analysis
 ├── exploratory_analysis/       # Automated EDA with statistical profiling
-├── data_quality/              # Data quality assessment and anomaly detection for text, image, audio, and video data
-├── statistics/                # Statistical analysis and distribution modeling
-├── hypothesis_generation/     # NLP-based hypothesis generation from data insights
-└── metadata_extraction/       # Automated metadata extraction and cataloging
+├── data_quality/               # Data quality assessment and anomaly detection for text, image, audio, and video data
+├── statistics/                 # Statistical analysis and distribution modeling
+├── hypothesis_generation/      # NLP-based hypothesis generation from data insights
+└── metadata_extraction/        # Automated metadata extraction and cataloging
 
 # Phase 2: Data Preparation
 datasets/                        # Data I/O, ingestion, loading, and saving
@@ -211,13 +219,13 @@ utils/                          # Common utilities and helper functions
 ├── io_helpers/                # Input/output operation helpers
 └── security_helpers/          # Security and encryption utilities
 
-docs/                        # Documentation and compliance records
-├── api/                    # API documentation
-├── tutorials/              # Usage examples and tutorials
-├── compliance/             # Regulatory compliance documentation
-├── architecture/           # System architecture documentation
-├── methodology/           # CRISP-ML(Q) process documentation
-└── stakeholder_reports/   # Reports for business stakeholders
+docs/                           # Documentation and compliance records
+├── api/                       # API documentation
+├── tutorials/                 # Usage examples and tutorials
+├── compliance/                # Regulatory compliance documentation
+├── architecture/              # System architecture documentation
+├── methodology/               # Methodology process documentation
+└── stakeholder_reports/       # Reports for business stakeholders
 ```
 
 
