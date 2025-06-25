@@ -1,7 +1,8 @@
-# 🧬 DSML Node Codebase Library
+# 🧬 HInode: DSML Node Codebase Architecture Standards for Seamless Code Management and Collaboration
 
 ## 🎯 VISION
 - Create agnostic and modular nodes (functions || classes)
+- Codebase directory architecture based on standards
 - Enable autonomous generation of new projects based on these nodes instead of letting GenAI build everything from scratch
 - The nodes will then be used on projects to follow a node-pipeline framework
 - **NOTE**: project packages source code `src/` should follow the directory structure from this codebase. 
@@ -17,7 +18,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 - **Clarity**: Directory and file names are self-documenting
 - **Scalability**: Easy to add new nodes and extend functionality
 
-## 🛠️ Current Node-Pipeline Frameworks
+## 🛠️ Current Node-Pipeline Frameworks that work well with this standard
 - **Native Python framework:**
   - [HICODE](https://github.com/nmc-costa/HIcode/blob/main/)
 - **Custom 3rd party Framework:**
