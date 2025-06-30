@@ -236,7 +236,14 @@ docs/                           # Documentation and compliance records
 ├── methodology/               # Methodology process documentation
 └── stakeholder_reports/       # Reports for business stakeholders
 ```
+---
 
+# 📋 Diagram
+
+
+<p align="center">
+<img src="./docs/images/_diagram.png">
+</p>
 
 ---
 
