@@ -174,8 +174,7 @@ evaluation/                      # Unified evaluation, metrics, and analysis
 deployment/                      # Production deployment and serving
 ├── serving/                    # Packaging, Ofuscation, containers, Docker images, serving endpoints
 ├── infrastructure/             # Infrastructure as code and deployment configs
-├── user_interfaces/            # Developer, Associate, end user interfaces, StreamLit labs interfaces,
-├── pipelines/                  # Automated deployment pipelines
+├── user_interfaces/            # Developer, Partner, end user interfaces, StreamLit labs interfaces,
 ├── rollback/                   # Rollback and recovery mechanisms
 ├── security/                   # Security configurations and access controls
 ├── agent_deployment/           # AI agent deployment systems
@@ -204,6 +203,16 @@ tests/                          # Comprehensive testing framework
 ├── integration/               # Integration tests for pipelines
 ├── data_validation/           # Data quality and schema validation tests
 └── model_validation/          # Model performance and quality tests
+
+data_acquisition/               # Acquisition of data and knowledge
+├── sensor_systems/             # Sensor hardware interfaces, communication, synchronization (e.g., ROS2)
+├── iot/                        # IoT communication and messaging (MQTT, brokers)
+├── kas/                        # Knowledge acquisition systems (ontologies, expert systems)
+└── experiment_designs/         # Design-of-experiments for algorithm comparisons, A/B tests, randomized trials
+
+pipelines/                       # Automated deployment pipelines (node-pipeline frameworks)
+├── hinode/                     # hinode framework pipelines (add README.md for usage)
+└── kedro/                      # kedro framework pipelines (add README.md for usage)
 
 storage/                        # All storage operations (RAG, vector DBs, model storage)
 ├── vector_databases/          # Vector database operations for embeddings and semantic search
