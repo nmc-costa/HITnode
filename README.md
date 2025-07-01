@@ -100,142 +100,170 @@ This codebase follows a node-based architecture where each directory contains re
 - project packages source code `src/` should follow the directory structure from this codebase.
 - If more folders are needed or redifinitions, do so on this structure
 
+
 ```
-# Phase 1: Business & Data Understanding
-business_understanding/          # Domain METADATA: Business objectives and stakeholder requirements processing into databases
-├── requirements/               # NLP nodes to extract and embed stakeholder requirements
-├── constraints/                # Parse technical/business constraints and create constraint graphs
-├── success_metrics/            # Extract and formalize business KPIs and success criteria
-├── domain_knowledge/           # Process domain-specific documents and create knowledge graphs
-└── context_extraction/         # Extract and structure business context for LLM applications
+# 📥 Phase 1: Business & Data Understanding
+business_understanding/          # 📋 Domain metadata: Business objectives and requirements processing
+├── requirements/               # 🎯 Business: NLP nodes to extract and embed stakeholder requirements
+├── constraints/                # ⚠️ Business: Parse technical/business constraints and create constraint graphs
+├── success_metrics/            # 📊 Business: Extract and formalize business KPIs and success criteria
+├── domain_knowledge/           # 📚 Business: Process domain-specific documents and create knowledge graphs
+└── context_extraction/         # 🔍 Business: Extract and structure business context for LLM applications
 
-data_understanding/              # Data exploration and automated analysis
-├── exploratory_analysis/       # Automated EDA with statistical profiling
-├── data_quality/               # Data quality assessment and anomaly detection for text, image, audio, and video data
-├── statistics/                 # Statistical analysis and distribution modeling
-├── hypothesis_generation/      # NLP-based hypothesis generation from data insights
-└── metadata_extraction/        # Automated metadata extraction and cataloging
+data_understanding/              # 🔬 Data exploration and automated analysis
+├── exploratory_analysis/       # 📈 Analysis: Automated EDA with statistical profiling
+├── data_quality/               # ✅ Analysis: Data quality assessment and anomaly detection (text, image, audio, video)
+├── statistics/                 # 📊 Analysis: Statistical analysis and distribution modeling
+├── hypothesis_generation/      # 💡 Analysis: NLP-based hypothesis generation from data insights
+└── metadata_extraction/        # 🏷️ Analysis: Automated metadata extraction and cataloging
 
-# Phase 2: Data Preparation
-datasets/                        # Data I/O, ingestion, loading, and saving
-├── loaders/                    # Load data from various sources (CSV, JSON, APIs, databases) and modalities (text, image, audio, video data)
-├── savers/                     # Save data to different formats and destinations
-├── extractors/                 # Extract data from external systems and APIs
-├── validators/                 # Data quality validation and schema checking
-└── huggingface_datasets/       # Hugging Face dataset integration and management
+# 🛠 Phase 2: Data Preparation
+datasets/                        # 📥 Data I/O: Ingestion, loading, and saving operations
+├── loaders/                    # 📂 I/O: Load data from various sources (CSV, JSON, APIs, databases) and modalities
+├── savers/                     # 💾 I/O: Save data to different formats and destinations
+├── extractors/                 # 🔌 I/O: Extract data from external systems and APIs
+├── validators/                 # ✔️ I/O: Data quality validation and schema checking
+└── huggingface_datasets/       # 🤗 I/O: Hugging Face dataset integration and management
 
-preprocessing/                   # Data cleaning, transformations, feature engineering
-├── cleaners/                   # Data cleaning and quality improvement nodes
-├── transformers/               # Data type conversions and transformations
-├── feature_engineering/        # Feature creation, selection, and extraction
-├── normalizers/                # Data normalization and scaling
-├── splitters/                  # Train/validation/test data splitting
-├── text_processors/            # Text preprocessing for NLP and LLM applications
-├── tokenizers/                 # Tokenization nodes for various models and frameworks
-└── embeddings_prep/            # Prepare data for embedding generation
+preprocessing/                   # 🛠️ Data transformation: Cleaning and feature engineering
+├── cleaners/                   # 🧹 Transform: Data cleaning and quality improvement nodes
+├── transformations/            # 🔄 Transform: Data type conversions and transformations
+├── feature_engineering/        # ⚙️ Transform: Feature creation, selection, and extraction
+├── normalizers/                # 📏 Transform: Data normalization and scaling
+├── splitters/                  # ✂️ Transform: Train/validation/test data splitting
+├── text_processors/            # 📝 Transform: Text preprocessing for NLP and LLM applications
+├── tokenizers/                 # 🔤 Transform: Tokenization nodes for various models and frameworks
+└── embeddings_prep/            # 🎯 Transform: Prepare data for embedding generation
 
-# Phase 3: Model Engineering
-models/                          # Training, fitting, prediction, and inference
-├── trainers/                   # Model training and fitting nodes
-├── predictors/                 # Prediction and inference nodes
-├── tuners/                     # Hyperparameter tuning and optimization
-├── architectures/              # Model architecture definitions and configurations
-├── ensembles/                  # Ensemble methods and model combination
-├── versioning/                 # Model versioning and comparison
-├── huggingface_models/         # Hugging Face model integration and fine-tuning
-├── llm_models/                 # Large language model implementations and wrappers APIs
-├── embedding_models/           # Embedding model implementations (text, image, multimodal)
-└── custom_architectures/       # Custom neural network architectures
-
-# LLM Applications
-llm_applications/                # LLM-powered application components
-├── prompts/                    # Prompt engineering and template management
-├── agents/                     # AI agent implementations and workflows
-├── chains/                     # LangChain-style processing chains
-├── tools/                      # AI tools and function calling
-├── retrievers/                 # Information retrieval systems
-├── rag_systems/                # Retrieval Augmented Generation
-├── context_management/         # Context handling and memory
-└── mcp_integration/            # Model Context Protocol integration
-
-# Phase 4: Model Evaluation
-evaluation/                      # Unified evaluation, metrics, and analysis
-├── metrics/                    # Performance metrics (MAE, MSE, F1, AUC, BLEU, ROUGE)
-├── validation/                 # Cross-validation and model validation strategies
-├── testing/                    # A/B testing and statistical testing nodes
-├── explainability/             # Model interpretability (SHAP, LIME, feature importance)
-├── scoring/                    # Scoring predictions (thresholds, business rules)
-├── comparison/                 # Model comparison and benchmarking
-├── quality_assurance/          # Quality gates and acceptance criteria
-└── reports/                    # Representations, plots, demos for showing to diferent users (using the data extracted during evaluation)
+# 🧠 Phase 3: Model Engineering
+models/                          # 🤖 ML core: Training, fitting, prediction, and inference
+├── trainers/                   # 🎓 Training: Model training and fitting nodes
+├── predictors/                 # 🔮 Inference: Prediction and inference nodes
+├── tuners/                     # 🎛️ Training: Hyperparameter tuning and optimization
+├── architectures/              # 🏗️ Training: Model architecture definitions and configurations
+├── ensembles/                  # 🤝 Training: Ensemble methods and model combination
+├── versioning/                 # 📦 Training: Model versioning and comparison
+├── huggingface_models/         # 🤗 Training: Hugging Face model integration and fine-tuning
+├── llm_models/                 # 🧠 Training: Large language model implementations and wrapper APIs
+├── embedding_models/           # 🎯 Training: Embedding model implementations (text, image, multimodal)
+└── custom_architectures/       # 🔧 Training: Custom neural network architectures
 
 
-# Phase 5: Model Deployment 
-deployment/                      # Production deployment and serving
-├── serving/                    # Packaging, Ofuscation, containers, Docker images, serving endpoints
-├── infrastructure/             # Infrastructure as code and deployment configs
-├── user_interfaces/            # Developer, Partner, end user interfaces, StreamLit labs interfaces,
-├── rollback/                   # Rollback and recovery mechanisms
-├── security/                   # Security configurations and access controls
-├── agent_deployment/           # AI agent deployment systems
-└── edge_deployment/            # Edge and mobile deployment
+# llm Applications
+llm_applications/                # 🤖 GPAI: LLM-powered application components
+├── prompts/                    # 💬 GPAI: Prompt engineering and template management
+├── agents/                     # 🤖 GPAI: AI agent implementations and workflows
+├── chains/                     # 🔗 GPAI: LangChain-style processing chains
+├── tools/                      # 🛠️ GPAI: AI tools and function calling
+├── retrievers/                 # 🔍 GPAI: Information retrieval systems
+├── rag_systems/                # 📚 GPAI: Retrieval Augmented Generation
+├── context_management/         # 🧠 GPAI: Context handling and memory
+└── mcp_integration/            # 🔌 GPAI: Model Context Protocol integration
 
-# Phase 6: Monitoring & Maintenance
-monitoring/                      # Continuous monitoring and maintenance
-├── performance/                # Model performance and drift monitoring
-├── data_quality/              # Ongoing data quality monitoring
-├── alerts/                    # Alerting and notification systems
-├── maintenance/               # Model maintenance and retraining triggers
-├── feedback_loops/            # Feedback collection and incorporation
-├── llm_monitoring/            # LLM-specific monitoring (token usage, latency, quality)
-└── agent_monitoring/          # AI agent monitoring systems
+# 🚀 Phase 4: Model Evaluation
+evaluation/                      # 📊 Assessment: Unified evaluation, metrics, and analysis
+├── metrics/                    # 📈 Assessment: Performance metrics (MAE, MSE, F1, AUC, BLEU, ROUGE)
+├── validation/                 # ✅ Assessment: Cross-validation and model validation strategies
+├── testing/                    # 🧪 Assessment: A/B testing and statistical testing nodes
+├── explainability/             # 🔍 Assessment: Model interpretability (SHAP, LIME, feature importance)
+├── scoring/                    # 🎯 Assessment: Scoring predictions (thresholds, business rules)
+├── comparison/                 # ⚖️ Assessment: Model comparison and benchmarking
+├── quality_assurance/          # 🛡️ Assessment: Quality gates and acceptance criteria
+└── reports/                    # 📋 Assessment: Representations, plots, demos for different users
 
-# Supporting Infrastructure
-conf/                           # Configuration management and environment settings
-├── base/                      # Base configuration files
-├── local/                     # Local development overrides
-├── environments/              # Environment-specific configurations
-├── datasets/                  # data-contracts, schemas, 
-└── quality_gates/             # Quality assurance configurations
 
-tests/                          # Comprehensive testing framework
-├── unit/                      # Unit tests for individual nodes
-├── integration/               # Integration tests for pipelines
-├── data_validation/           # Data quality and schema validation tests
-└── model_validation/          # Model performance and quality tests
+# 🏭 Phase 5: Model Deployment 
+deployment/                      # 🚀 Production: Deployment and serving
+├── serving/                    # 🌐 Production: Packaging, containers, Docker images, serving endpoints
+├── infrastructure/             # 🏗️ Production: Infrastructure as code and deployment configs
+├── user_interfaces/            # 👥 Production: Developer, partner, end user interfaces, StreamLit labs
+├── rollback/                   # ↩️ Production: Rollback and recovery mechanisms
+├── security/                   # 🔒 Production: Security configurations and access controls
+├── agent_deployment/           # 🤖 Production: AI agent deployment systems
+└── edge_deployment/            # 📱 Production: Edge and mobile deployment
 
-data_acquisition/               # Acquisition of data and knowledge
-├── sensor_systems/             # Sensor hardware interfaces, communication, synchronization (e.g., ROS2)
-├── iot/                        # IoT communication and messaging (MQTT, brokers)
-├── kas/                        # Knowledge acquisition systems (ontologies, expert systems)
-└── experiment_designs/         # Design-of-experiments for algorithm comparisons, A/B tests, randomized trials
+# 🔄 Phase 6: Monitoring & Maintenance
+monitoring/                      # 👁️ Operations: Continuous monitoring and maintenance
+├── performance/                # 📊 Operations: Model performance and drift monitoring
+├── data_quality/               # ✅ Operations: Ongoing data quality monitoring
+├── alerts/                     # 🚨 Operations: Alerting and notification systems
+├── maintenance/                # 🔧 Operations: Model maintenance and retraining triggers
+├── feedback_loops/             # 🔄 Operations: Feedback collection and incorporation
+├── llm_monitoring/             # 🧠 Operations: LLM-specific monitoring (token usage, latency, quality)
+└── agent_monitoring/           # 🤖 Operations: AI agent monitoring systems
 
-pipelines/                       # Automated deployment pipelines (node-pipeline frameworks)
-├── hinode/                     # hinode framework pipelines (add README.md for usage)
-└── kedro/                      # kedro framework pipelines (add README.md for usage)
+# 🧩 Supporting Infrastructure
+conf/                           # ⚙️ Configuration: Environment settings and configurations
+├── base/                      # 🏗️ Config: Base configuration files
+├── local/                     # 💻 Config: Local development overrides
+├── environments/              # 🌍 Config: Environment-specific configurations
+├── datasets/                  # 📋 Config: Data contracts, schemas
+└── quality_gates/             # 🛡️ Config: Quality assurance configurations
 
-storage/                        # All storage operations (RAG, vector DBs, model storage)
-├── vector_databases/          # Vector database operations for embeddings and semantic search
-├── model_registry/            # Model store versioning, storage, and retrieval
-├── embeddings/                # Store and retrieve embeddings for RAG applications
-├── feature_store/             # Feature store management and serving
-├── knowledge_graphs/          # Graph databases for constraints, relationships, domain knowledge
-└── document_stores/           # Document storage for RAG and knowledge systems
+tests/                          # 🧪 Quality: Comprehensive testing framework
+├── unit/                      # 🔬 Testing: Unit tests for individual nodes
+├── integration/               # 🔗 Testing: Integration tests for pipelines
+├── data_validation/           # ✅ Testing: Data quality and schema validation tests
+└── model_validation/          # 🎯 Testing: Model performance and quality tests
 
-utils/                          # Common utilities and helper functions
-├── data_helpers/              # Data manipulation and processing utilities
-├── model_helpers/             # Model-related utility functions
-├── io_helpers/                # Input/output operation helpers
-└── security_helpers/          # Security and encryption utilities
+data_acquisition/                # 📡 Hardware: Acquisition of data and knowledge
+├── sensor_systems/             # 🔌 Hardware: Sensor hardware interfaces, communication, synchronization (ROS2)
+├── iot/                        # 📶 Hardware: IoT communication and messaging (MQTT, brokers)
+├── kas/                        # 🧠 Hardware: Knowledge acquisition systems (ontologies, expert systems)
+└── experiment_designs/         # 🔬 Hardware: Design-of-experiments for algorithm comparisons, A/B tests
 
-docs/                           # Documentation and compliance records
-├── api/                       # API documentation
-├── tutorials/                 # Usage examples and tutorials
-├── compliance/                # Regulatory compliance documentation
-├── architecture/              # System architecture documentation
-├── methodology/               # Methodology process documentation
-└── stakeholder_reports/       # Reports for business stakeholders
+pipelines/                       # 🔄 Orchestration: Automated deployment pipelines (node-pipeline frameworks)
+├── hinode/                     # 🎯 Orchestration: HITnode framework pipelines (with README.md for usage)
+└── kedro/                      # 🔧 Orchestration: Kedro framework pipelines (with README.md for usage)
+
+storage/                        # 💾 Data persistence: All storage operations (RAG, vector DBs, model storage)
+├── data/                      # 🧪 Dev/Test: Locally temporary data folder that serves sample subsets to validate nodes
+├── vector_databases/          # 🔍 Prod: Vector database operations for embeddings and semantic search
+├── model_registry/            # 📦 Prod: Model store versioning, storage, and retrieval
+├── embeddings/                # 🎯 Prod: Store and retrieve embeddings for RAG applications
+├── feature_store/             # 📊 Prod: Feature store management and serving
+├── knowledge_graphs/          # 🕸️ Prod: Graph databases for constraints, relationships, domain knowledge
+└── document_stores/           # 📄 Prod: Document storage for RAG and knowledge systems
+
+utils/                          # 🔧 Utilities: Common utilities and helper functions
+├── data_helpers/              # 📊 Utilities: Data manipulation and processing utilities
+├── model_helpers/             # 🤖 Utilities: Model-related utility functions
+├── io_helpers/                # 📁 Utilities: Input/output operation helpers
+└── security_helpers/          # 🔒 Utilities: Security and encryption utilities
+
+docs/                           # 📚 Documentation: Documentation and compliance records
+├── api/                       # 🔌 Docs: API documentation
+├── tutorials/                 # 📖 Docs: Usage examples and tutorials
+├── compliance/                # 📋 Docs: Regulatory compliance documentation
+├── architecture/              # 🏗️ Docs: System architecture documentation
+├── methodology/               # 📐 Docs: Methodology process documentation
+└── stakeholder_reports/       # 👥 Docs: Reports for business stakeholders
 ```
+
+<!--
+### Emoji Categorization: 
+**Each directory is clearly marked with emojis indicating its purpose:**
+  ```
+  🧪 Dev/Test: Development and testing components
+  🚀 Prod: Production systems and operations
+  📋 Business: Business logic and requirements
+  🔬 Analysis: Data analysis and exploration
+  📥 I/O: Input/output operations
+  🛠️ Transform: Data transformation and processing
+  🤖 Training: Model training and development
+  🌟 GenAI: Generative AI and LLM components
+  📊 Assessment: Evaluation and metrics
+  🌐 Production: Production deployment
+  👁️ Operations: Monitoring and maintenance
+  💾 Data: Data storage and persistence
+  📡 Hardware: Hardware interfaces and acquisition
+  🔄 Orchestration: Pipeline orchestration
+  🔧 Utilities: Helper functions and utilities
+  ⚙️ Config: Configuration management
+  🧪 Testing: Quality assurance and testing
+  📚 Docs: Documentation and compliance
+  ```
+-->
 ---
 
 # 📋 Diagram
