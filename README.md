@@ -1,13 +1,11 @@
+© 2021 nmc-costa. All Rights Reserved. “simplifyhit”™ is a trademark of nmc-costa.
+
 # 🧬 HITnode 
 > **Modular, standards-first node library for ML & GenAI pipelines.**: is a standards-first, modular codebase designed to accelerate ML and GPAI development through reusable, composable nodes. It bridges the gap between innovation and implementation—making intelligent software development simpler, faster, and more sustainable. Build with precision. Scale with purpose. 🚀 #HITnode #CRISPMLQ #ModularAI
 
 <p align="center">
 <img src="./docs/images/logo_1_small.png" width="200">
 </p>
-
-
-*Author: nmc-costa*
-
 
 
 ## 📌 Key Highlights
