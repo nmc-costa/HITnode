@@ -264,13 +264,17 @@ docs/                           # 📚 Documentation: Documentation and complian
 -->
 ---
 
-# 📋 Diagram
+# 📋 Diagrams
 
-
+### Base diagram
 <p align="center">
-<img src="./docs/images/_diagram.png">
+<img src="./docs/images/_diagram_base.png">
 </p>
 
+### Focus on GPAI/LLM components
+<p align="center">
+<img src="./docs/images/_diagram_LLM.png">
+</p
 ---
 
 ### 📋 GitHub Topics
