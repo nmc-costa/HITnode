@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+*.pyc
+*.pt
+*.pth
+*.egg-info
+*.DS_Store
+__pycache__
+.vscode
+logs/
+local/
+results/
+old/
+logos/
+ppts/
+advanced/
