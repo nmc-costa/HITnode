@@ -148,7 +148,7 @@ models/                          # 🤖 ML core: Training, fitting, prediction, 
 
 
 # GPAI Applications
-gpai_applications/                # 🤖 GPAI: LLM-powered application components
+gpai_applications/                # 🤖 GPAI: LargeModels-powered application components (LLMOPs, VLMOPs, Transformers, agents)
 ├── prompts/                    # 💬 GPAI: Prompt engineering and template management
 ├── agents/                     # 🤖 GPAI: AI agent implementations and workflows
 ├── chains/                     # 🔗 GPAI: LangChain-style processing chains
