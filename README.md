@@ -147,8 +147,8 @@ models/                          # 🤖 ML core: Training, fitting, prediction, 
 └── custom_architectures/       # 🔧 Training: Custom neural network architectures
 
 
-# llm Applications
-llm_applications/                # 🤖 GPAI: LLM-powered application components
+# GPAI Applications
+gpai_applications/                # 🤖 GPAI: LLM-powered application components
 ├── prompts/                    # 💬 GPAI: Prompt engineering and template management
 ├── agents/                     # 🤖 GPAI: AI agent implementations and workflows
 ├── chains/                     # 🔗 GPAI: LangChain-style processing chains
