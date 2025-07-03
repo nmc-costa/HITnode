@@ -51,7 +51,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 ## 📊 Methodology Standards
 - **Data Mining**: [CRISP-DM](https://www.datascience-pm.com/crisp-dm-2/)
 - **Machine Learning**: [CRISP-ML(Q)](https://ml-ops.org/content/crisp-ml)
-- **LLM Applications**: [LangChain](https://python.langchain.com/docs/concepts/)
+- **GPAI Applications**: [🤗HuggingFace](https://huggingface.co/), [LangChain](https://python.langchain.com/docs/concepts/)
 - **Model Integration**: [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 
 ## 📋 RULES
