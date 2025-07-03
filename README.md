@@ -28,7 +28,7 @@
 - Codebase directory architecture based on standards
 - Enable autonomous generation of new projects based on these nodes instead of letting GenAI build everything from scratch
 - The nodes will then be used on projects to follow a node-pipeline framework
-- **NOTE**: project packages source code `src/` should follow the directory structure from this codebase. 
+- **NOTE**: HITnode is designed as both a **structural blueprint** to construct a **library of nodes** for projects. To ensure seamless integration and maintain consistency, we strongly recommend that any project adopts the HITnode directory structure within its own `src/` folder. 
 
 
 ## 🔄 Node-Based Architecture
@@ -54,6 +54,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 - **GPAI Applications**: [🤗HuggingFace](https://huggingface.co/), [LangChain](https://python.langchain.com/docs/concepts/)
 - **Model Integration**: [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 
+
 ## 📋 RULES
 
 ### 🎯 Node Acceptance Criteria
@@ -66,7 +67,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 
 
 ### 🔧 Code Standards  
-- Follow [scikit-learn](https://scikit-learn.org/stable/developers/develop.html#naming), [ML-Ops](https://ml-ops.org/content/mlops-principles#naming-conventions), [CRISP-ML(Q)](https://ml-ops.org/content/crisp-ml), [LangChain](https://python.langchain.com/docs/concepts/), and [MCP](https://modelcontextprotocol.io/) conventions
+- Follow [scikit-learn](https://scikit-learn.org/stable/developers/develop.html#naming), [ML-Ops](https://ml-ops.org/content/mlops-principles#naming-conventions), [Google ML Style Guide](https://developers.google.com/machine-learning/guides/rules-of-ml), [CRISP-ML(Q)](https://ml-ops.org/content/crisp-ml), [LangChain](https://python.langchain.com/docs/concepts/), and [MCP](https://modelcontextprotocol.io/) naming/code conventions
 - Make them as agnostic as possible to versioning: Maintain backward compatibility or provide clear migration paths
 - Minimize external dependencies, use the must trusted and used packages
 - Implement configuration management through `conf/` directory
@@ -83,7 +84,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 1. **Identify CRISP-ML(Q) Phase**: Determine which phase your node belongs to (Business Understanding → Data Understanding → Data Preparation → Model Engineering → Model Evaluation → Model Deployment → Monitoring & Maintenance)
 2. **Choose Application Type**: Determine if you're building traditional ML, LLM applications, RAG systems, AI agents, or multi-modal AI
 3. Choose the appropriate directory for your node type based on the phase mapping and application type
-4. Follow [scikit-learn](https://scikit-learn.org/stable/developers/develop.html#naming), [ML-Ops](https://ml-ops.org/content/mlops-principles#naming-conventions), [Google ML Style Guide](https://developers.google.com/machine-learning/guides/rules-of-ml), [CRISP-ML(Q)](https://ml-ops.org/content/crisp-ml), [LangChain](https://python.langchain.com/docs/concepts/), and [MCP](https://modelcontextprotocol.io/) naming conventions
+4. Follow above the 🔧 Code Standards above.
 5. Implement nodes with simple packages [scikit-learn style interfaces](https://scikit-learn.org/stable/developers/develop.html#apis-of-scikit-learn-objects) (`fit`, `transform`, `predict`) and framework-specific patterns (LangChain chains, MCP tools)
 6. Set up configuration management in `conf/` directory using python, yaml or JSON and following for example [Kedro patterns](https://docs.kedro.org/en/stable/configuration/configuration_basics.html)
 7. Compose nodes into pipelines as needed by copying the directory into `src/`
