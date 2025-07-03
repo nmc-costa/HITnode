@@ -28,7 +28,7 @@
 - Codebase directory architecture based on standards
 - Enable autonomous generation of new projects based on these nodes instead of letting GenAI build everything from scratch
 - The nodes will then be used on projects to follow a node-pipeline framework
-- **NOTE**: HITnode is designed as both a **structural blueprint** to construct a **library of nodes** for projects. To ensure seamless integration and maintain consistency, we strongly recommend that any project adopts the HITnode directory structure within its own `src/` folder. 
+- **NOTE**: HITnode is designed as a **structural blueprint** to construct a **library of nodes** for projects. To ensure seamless integration and maintain consistency, we strongly recommend that any project adopts the HITnode directory structure within its own `src/` folder. 
 
 
 ## 🔄 Node-Based Architecture
