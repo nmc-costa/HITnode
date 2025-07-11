@@ -96,20 +96,21 @@ Each directory contains **nodes** - reusable components that can be combined to 
 This codebase follows a node-based architecture where each directory contains reusable nodes that can be composed into ML pipelines, organized by **CRISP-ML(Q)** phases with modern AI/LLM integration. 
 
 **NOTE**: 
+- **FULL DIRECTORY STRUCTURE**: [full_directory_structure.md](my/HITnode/full_directory_structure.md)
 - project packages source code `src/` should follow the directory structure from this codebase.
 - If more folders are needed or redifinitions, do so on this structure
 
 
 ```
 # 📥 Phase 1: Business & Data Understanding
-business_understanding/          # 📋 Domain metadata: Business objectives and requirements processing
+business_understanding/          # 📋 Business: Domain metadata: Business objectives and requirements processing
 ├── requirements/               # 🎯 Business: NLP nodes to extract and embed stakeholder requirements
 ├── constraints/                # ⚠️ Business: Parse technical/business constraints and create constraint graphs
 ├── success_metrics/            # 📊 Business: Extract and formalize business KPIs and success criteria
 ├── domain_knowledge/           # 📚 Business: Process domain-specific documents and create knowledge graphs
 └── context_extraction/         # 🔍 Business: Extract and structure business context for LLM applications
 
-data_understanding/              # 🔬 Data exploration and automated analysis
+data_understanding/              # 🔬 Analysis: Data exploration and automated analysis
 ├── exploratory_analysis/       # 📈 Analysis: Automated EDA with statistical profiling
 ├── data_quality/               # ✅ Analysis: Data quality assessment and anomaly detection (text, image, audio, video)
 ├── statistics/                 # 📊 Analysis: Statistical analysis and distribution modeling
@@ -124,7 +125,7 @@ datasets/                        # 📥 Data I/O: Ingestion, loading, and saving
 ├── validators/                 # ✔️ I/O: Data quality validation and schema checking
 └── huggingface_datasets/       # 🤗 I/O: Hugging Face dataset integration and management
 
-preprocessing/                   # 🛠️ Data transformation: Cleaning and feature engineering
+preprocessing/                   # 🛠️ Data transformations: Cleaning and feature engineering
 ├── cleaners/                   # 🧹 Transform: Data cleaning and quality improvement nodes
 ├── transformations/            # 🔄 Transform: Data type conversions and transformations
 ├── feature_engineering/        # ⚙️ Transform: Feature creation, selection, and extraction
@@ -143,13 +144,11 @@ models/                          # 🤖 ML core: Training, fitting, prediction, 
 ├── ensembles/                  # 🤝 Training: Ensemble methods and model combination
 ├── versioning/                 # 📦 Training: Model versioning and comparison
 ├── huggingface_models/         # 🤗 Training: Hugging Face model integration and fine-tuning
-├── llm_models/                 # 🧠 Training: Large language model implementations and wrapper APIs
+├── llm_models/                 # 🤖 Training: Large language model implementations and wrapper APIs
 ├── embedding_models/           # 🎯 Training: Embedding model implementations (text, image, multimodal)
 └── custom_architectures/       # 🔧 Training: Custom neural network architectures
 
-
-# GPAI Applications
-gpai_applications/                # 🤖 GPAI: Large Models powered application components (LLMOPs, VLMOPs, Transformers, agents)
+gpai_applications/                # 🧠 GPAI: Large Models powered applications components (LLMOPs, VLMOPs, Transformers, agents)
 ├── prompts/                    # 💬 GPAI: Prompt engineering and template management
 ├── agents/                     # 🤖 GPAI: AI agent implementations and workflows
 ├── chains/                     # 🔗 GPAI: LangChain-style processing chains
