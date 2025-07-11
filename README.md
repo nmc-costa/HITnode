@@ -276,12 +276,12 @@ docs/                           # 📚 Documentation: Documentation and complian
 <p align="center">
 <img src="./docs/images/_diagram_LLM.png">
 </p
+  
 ---
 
 
 
-## Sponsorship
-
+# Sponsorship
 We value the support of our community in advancing simple human interface technologies. If you believe in the mission of simplifyhit™ and would like to contribute to its development and maintenance, consider becoming a sponsor or contact us for custom services. Your support enables us to enhance the codebase, expand our resources, and provide ongoing support to the community. 
 
 - **Contact Services**: For custom simplifyhit™ in your business, [linkedin](linkedin.com/in/nuno-m-c-da-costa-a14a4349).
