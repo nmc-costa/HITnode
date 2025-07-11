@@ -42,7 +42,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 - **Clarity**: Directory and file names are self-documenting
 - **Scalability**: Easy to add new nodes and extend functionality
 
-## 🛠️ Current Node-Pipeline Frameworks that work well with this standard
+## 🛠️ Current Node-Pipeline Frameworks to use this blueprint
 - **Native Python framework:**
   - [HICODE](https://github.com/nmc-costa/HIcode/blob/main/)
 - **Custom 3rd party Framework:**
