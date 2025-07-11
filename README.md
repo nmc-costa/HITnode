@@ -282,12 +282,12 @@ docs/                           # 📚 Documentation: Documentation and complian
 
 
 # Sponsorship
+
 We value the support of our community in advancing simple human interface technologies. If you believe in the mission of simplifyhit™ and would like to contribute to its development and maintenance, consider becoming a sponsor or contact us for custom services. Your support enables us to enhance the codebase, expand our resources, and provide ongoing support to the community. 
 
 - **Contact Services**: For custom simplifyhit™ in your business, [linkedin](linkedin.com/in/nuno-m-c-da-costa-a14a4349).
 
 - **GitHub Sponsors**: Support simplifyhit™ projects through GitHub Sponsors and help us maintain its quality and accessibility. Visit our [GitHub Sponsors](https://github.com/sponsors/simplifyhit) page to explore sponsorship options. 
-)
 
 - **Patreon**: Show your commitment by becoming a patron on [Patreon](https://www.patreon.com/simplifyhit).
 
@@ -296,6 +296,15 @@ We value the support of our community in advancing simple human interface techno
 
 
 Your sponsorship not only assists in driving the development of simplifyhit™ projects but also ensures their availability as free and open-source resources for the wider community. We are immensely grateful for your support!
+
+## License
+
+The project is released under the [MIT License](https://opensource.org/licenses/MIT), granting you the freedom to use, modify, and distribute the codebase while providing attribution to the original authors.
+
+Let's revolutionize data science and engineering collaboration! Together, we build a stronger foundation for the future of software development. Happy coding!
+
+*Please note: The HIcode repository is maintained and updated to incorporate emerging best practices and advancements. Be sure to check back for the latest improvements.*
+
 
 
 
