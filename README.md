@@ -278,6 +278,8 @@ docs/                           # 📚 Documentation: Documentation and complian
 </p
 ---
 
+
+
 ## Sponsorship
 
 We value the support of our community in advancing simple human interface technologies. If you believe in the mission of simplifyhit™ and would like to contribute to its development and maintenance, consider becoming a sponsor or contact us for custom services. Your support enables us to enhance the codebase, expand our resources, and provide ongoing support to the community. 
@@ -294,6 +296,8 @@ We value the support of our community in advancing simple human interface techno
 
 
 Your sponsorship not only assists in driving the development of simplifyhit™ projects but also ensures their availability as free and open-source resources for the wider community. We are immensely grateful for your support!
+
+
 
 ### 📋 GitHub Topics
 
