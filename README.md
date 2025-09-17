@@ -117,7 +117,7 @@ data_understanding/              # 🔬 Analysis: Data exploration and automated
 ├── hypothesis_generation/      # 💡 Analysis: NLP-based hypothesis generation from data insights
 └── metadata_extraction/        # 🏷️ Analysis: Automated metadata extraction and cataloging
 
-# 🛠 Phase 2: Data Preparation
+# 🛠 Phase 2: Data Engineering (Data Preparation)
 datasets/                        # 📥 Data I/O: Ingestion, loading, and saving operations
 ├── loaders/                    # 📂 I/O: Load data from various sources (CSV, JSON, APIs, databases) and modalities
 ├── savers/                     # 💾 I/O: Save data to different formats and destinations
@@ -135,14 +135,14 @@ preprocessing/                   # 🛠️ Data transformations: Cleaning and fe
 ├── tokenizers/                 # 🔤 Transform: Tokenization nodes for various models and frameworks
 └── embeddings_prep/            # 🎯 Transform: Prepare data for embedding generation
 
-# 🧠 Phase 3: Model Engineering
+# 🧠 Phase 3: ML Model Engineering
 models/                          # 🤖 ML core: Training, fitting, prediction, and inference
 ├── trainers/                   # 🎓 Training: Model training and fitting nodes
 ├── predictors/                 # 🔮 Inference: Prediction and inference nodes
 ├── tuners/                     # 🎛️ Training: Hyperparameter tuning and optimization
 ├── architectures/              # 🏗️ Training: Model architecture definitions and configurations
 ├── ensembles/                  # 🤝 Training: Ensemble methods and model combination
-├── versioning/                 # 📦 Training: Model versioning and comparison
+├── registry/                   # 📦 Training: Documenting ML model, versioning, experiments metadata
 ├── huggingface_models/         # 🤗 Training: Hugging Face model integration and fine-tuning
 ├── llm_models/                 # 🤖 Training: Large language model implementations and wrapper APIs
 ├── embedding_models/           # 🎯 Training: Embedding model implementations (text, image, multimodal)
@@ -158,7 +158,7 @@ gpai_applications/                # 🧠 GPAI: Large Models powered applications
 ├── context_management/         # 🧠 GPAI: Context handling and memory
 └── mcp_integration/            # 🔌 GPAI: Model Context Protocol integration
 
-# 🚀 Phase 4: Model Evaluation
+# 🚀 Phase 4: ML Model Evaluation
 evaluation/                      # 📊 Assessment: Unified evaluation, metrics, and analysis
 ├── metrics/                    # 📈 Assessment: Performance metrics (MAE, MSE, F1, AUC, BLEU, ROUGE)
 ├── validation/                 # ✅ Assessment: Cross-validation and model validation strategies
@@ -180,7 +180,7 @@ deployment/                      # 🚀 Production: Deployment and serving
 ├── agent_deployment/           # 🤖 Production: AI agent deployment systems
 └── edge_deployment/            # 📱 Production: Edge and mobile deployment
 
-# 🔄 Phase 6: Monitoring & Maintenance
+# 🔄 Phase 6: Model Monitoring & Maintenance
 monitoring/                      # 👁️ Operations: Continuous monitoring and maintenance
 ├── performance/                # 📊 Operations: Model performance and drift monitoring
 ├── data_quality/               # ✅ Operations: Ongoing data quality monitoring
