@@ -96,7 +96,7 @@ Each directory contains **nodes** - reusable components that can be combined to 
 This codebase follows a node-based architecture where each directory contains reusable nodes that can be composed into ML pipelines, organized by **CRISP-ML(Q)** phases with modern AI/LLM integration. 
 
 **NOTE**: 
-- **FULL DIRECTORY STRUCTURE**: [full_directory_structure.md](my/HITnode/full_directory_structure.md)
+- **FULL DIRECTORY STRUCTURE**: [full_directory_structure.md](full_directory_structure.md)
 - project packages source code `src/` should follow the directory structure from this codebase.
 - If more folders are needed or redifinitions, do so on this structure
 
