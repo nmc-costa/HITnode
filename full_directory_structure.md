@@ -312,46 +312,111 @@ Each directory contains **nodes** - reusable components that can be combined to 
 
 ## 🏷️ Customized from [Crisp-ML](https://ml-ops.org/content/crisp-ml)
 
+"
 
-| CRISP-ML(Q) Phase | Tasks |
-| --- | --- |
-| Business and Data Understanding | - Define business objectives: requirements, constraints, success_metrics
-- Translate business objectives into ML objectives
-- Collect and verify data
-- Assess the project feasibility
-- Annotations if supervised
-- Create POCs |
+ActivitiesSubactivies and descriptionBusiness and Data Understanding- Define business objectives: requirements, constraints, success_metricsTranslate business objectives into ML objectives
+
+Collect and verify data
+
+Assess the project feasibility
+
+Annotations if supervised
+
+Create POCs
+
+GenAI: Define generative use case (e.g., summarization, content creation) and success criteria (e.g., coherence, factuality)
+
+Agents: Define agent's goals, available tools (APIs, functions), and task completion metrics |
+
 | Data Engineering (data preparation) | - Feature selection
-- Data selection
-- Class balancing
-- Cleaning data (noise reduction, data imputation)
-- Feature engineering (data construction)
-- Data augmentation
-- Data standartization |
+
+Data selection
+
+Class balancing
+
+Cleaning data (noise reduction, data imputation)
+
+Feature engineering (data construction)
+
+Data augmentation
+
+Data standartization
+
+GenAI: Curate instruction datasets for fine-tuning
+
+GenAI (RAG): Build and process a knowledge base for Retrieval-Augmented Generation (chunking, embedding)
+
+Agents: Prepare tool documentation and few-shot examples for the agent to learn from |
+
 | ML Model Engineering | - Define quality measure of the model
-- ML algorithm selection (baseline selection)
-- Adding domain knowledge to specialize the model
-- Model training
-- Optional: applying transfer learning (using pre-trained models)
-- Model compression
-- Ensemble learning
-- Model Registry: Documenting the ML model and experiments |
+
+ML algorithm selection (baseline selection)
+
+Adding domain knowledge to specialize the model
+
+Model training
+
+Optional: applying trainsfer learning (using pre-trained models)
+
+Model compression
+
+Ensemble learning
+
+Model Registry: Documenting the ML model and experiments
+
+GenAI: Select a base Foundation Model (FM)
+
+GenAI: Develop system through prompt engineering, fine-tuning (e.g., LoRA), or RAG
+
+Agents: Design and implement the agent's reasoning loop (e.g., ReAct) and tool-use mechanisms |
+
 | ML Model Evaluation | - Validate model's performance
-- Determine robustess
-- Increase model's explainability
-- Make a decision whether to deploy the model
-- Document the evaluation phase |
+
+Determine robustess
+
+Increase model's explainability
+
+Make a decision whether to deploy the model
+
+Document the evaluation phase
+
+GenAI: Evaluate for hallucinations, toxicity, and bias (Red Teaming)
+
+GenAI: Use LLM-as-a-judge or human feedback (RLHF) for qualitative assessment
+
+Agents: Evaluate task completion success rate and tool selection accuracy |
+
 | Model Deployment | - Evaluate model under production condition
-- Assure user acceptance and usability
-- Model governance
-- Deploy according to the selected strategy (A/B testing, multi-armed bandits) |
+
+Assure user acceptance and usability
+
+Model governance
+
+Deploy according to the selected strategy (A/B testing, multi-armed bandits)
+
+GenAI (RAG): Deploy the vector database and retrieval system alongside the LLM
+
+Agents: Deploy the agent's reasoning engine with secure access to its tools/APIs |
+
 | Model Monitoring and Maintenance | - Monitor the efficiency and efficacy of the model prediction serving
-- Compare to the previously specified success criteria (thresholds)
-- Retrain model if required
-- Collect new data
-- Perform labelling of the new data points
-- Repeat tasks from the *Model Engineering* and *Model Evaluation* phases
-- Continuous, integration, training, and deployment of the model |
+
+Compare to the previously specified success criteria (thresholds)
+
+Retrain model if required
+
+Collect new data
+
+Perform labelling of the new data points
+
+Repeat tasks from the Model Engineering and Model Evaluation phases
+
+Continuous, integration, training, and deployment of the model
+
+GenAI: Monitor for prompt injection, PII leakage, and concept drift in the knowledge base
+
+Agents: Monitor task success rates, tool errors, and conversation logs for failures |
+
+"
 
 ## 📈 Key Improvements from Industry Research & CRISP-ML(Q) + LLM/AI Alignment
 
