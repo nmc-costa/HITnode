@@ -310,7 +310,7 @@ docs/                           # 📚 Documentation: Documentation and complian
 
 Each directory contains **nodes** - reusable components that can be combined to build ML pipelines. Nodes follow consistent interfaces for easy composition and testing.
 
-## 🏷️ Customized from [Crisp-ML](https://ml-ops.org/content/crisp-ml)
+## 🏷️ Custom [Crisp-ML](https://ml-ops.org/content/crisp-ml) table
 
 | Activities | Subactivities and Description |
 |---|---|
