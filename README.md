@@ -97,7 +97,7 @@ This codebase follows a node-based architecture where each directory contains re
 
 **NOTE**: 
 - **FULL DIRECTORY STRUCTURE**: [full_directory_structure.md](full_directory_structure.md)
-- Follows [**Custom CRISP-ML**](https://github.com/nmc-costa/HITnode/blob/main/full_directory_structure.md#%EF%B8%8F-customized-from-crisp-ml)
+- Follows [**Custom CRISP-ML**](https://github.com/nmc-costa/HITnode/blob/main/full_directory_structure.md#%EF%B8%8F-customized-from-crisp-ml) table
 - project packages source code `src/` should follow the directory structure from this codebase.
 - If more folders are needed or redifinitions, do so on this structure
 
