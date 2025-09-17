@@ -24,7 +24,7 @@ data_understanding/              # 🔬 Analysis: Data exploration and automated
 ├── metadata_extraction/        # 🏷️ Analysis: Automated metadata extraction and cataloging nodes
 └── multimodal_analysis/        # 🎭 Analysis: Analysis nodes for text, image, audio, and video data
 
-# 🛠 Phase 2: Data Preparation 
+# 🛠 Phase 2: Data Engineering (Data Preparation) 
 datasets/                        # 📥 Data I/O: ingestion, loading, and saving
 ├── loaders/                    # 📂 I/O: Load data from various sources (CSV, JSON, APIs, databases) and modalities
 ├── savers/                     # 💾 I/O: Save data to different formats and destinations
@@ -44,14 +44,14 @@ preprocessing/                   # 🛠️ Data Transformations: Data cleaning, 
 ├── chunking/                   # 📄 Transform: Chunking long text into smaller semantically meaningful "chunks"
 └── embeddings_prep/            # 🎯 Transform: Prepare data for embedding generation
 
-# 🧠 Phase 3: Model Engineering 
+# 🧠 Phase 3: ML Model Engineering 
 models/                          # 🤖 ML Core: Training, fitting, prediction, and inference
 ├── trainers/                   # 🎓 Training: Model training and fitting nodes
 ├── predictors/                 # 🔮 Training: Prediction and inference nodes
 ├── tuners/                     # 🎛️ Training: Hyperparameter tuning and optimization
 ├── architectures/              # 🏗️ Training: Model architecture definitions and configurations
 ├── ensembles/                  # 🤝 Training: Ensemble methods and model combination
-├── versioning/                 # 📦 Training: Model versioning and comparison
+├── registry/                   # 📦 Training: Documenting ML model, versioning, experiments metadata
 ├── huggingface_models/         # 🤗 Training: Hugging Face model integration and fine-tuning
 ├── llm_models/                 # 🧠 Training: Large language model implementations and wrappers
 ├── embedding_models/           # 🎯 Training: Embedding model implementations (text, image, multimodal)
@@ -101,7 +101,7 @@ gpai_applications/               # 🧠 GPAI: Large Models powered applications 
     ├── connectors/             # 🔗 GPAI: MCP connectors for various tools
     └── protocols/              # 📡 GPAI: Custom protocol implementations
 
-# 🚀 Phase 4: Model Evaluation 
+# 🚀 Phase 4: ML Model Evaluation 
 evaluation/                      # 📊 Assessment: Unified evaluation, metrics, and analysis
 ├── metrics/                    # 📈 Assessment: Performance metrics (MAE, MSE, F1, AUC, NDCG, BLEU, ROUGE)
 │   ├── regression/             # 📊 Assessment: Regression metrics (MAE, MSE, RMSE, MAPE, R²)
@@ -310,6 +310,48 @@ docs/                           # 📚 Documentation: Documentation and complian
 
 Each directory contains **nodes** - reusable components that can be combined to build ML pipelines. Nodes follow consistent interfaces for easy composition and testing.
 
+## 🏷️ Customized from [Crisp-ML](https://ml-ops.org/content/crisp-ml)
+
+| CRISP-ML(Q) Phase | Tasks |
+| --- | --- |
+| Business and Data Understanding | - Define business objectives: requirements, constraints, success_metrics
+- Translate business objectives into ML objectives
+- Collect and verify data
+- Assess the project feasibility
+- Annotations if supervised
+- Create POCs |
+| Data Engineering (data preparation) | - Feature selection
+- Data selection
+- Class balancing
+- Cleaning data (noise reduction, data imputation)
+- Feature engineering (data construction)
+- Data augmentation
+- Data standartization |
+| ML Model Engineering | - Define quality measure of the model
+- ML algorithm selection (baseline selection)
+- Adding domain knowledge to specialize the model
+- Model training
+- Optional: applying transfer learning (using pre-trained models)
+- Model compression
+- Ensemble learning
+- Model Registry: Documenting the ML model and experiments |
+| ML Model Evaluation | - Validate model's performance
+- Determine robustess
+- Increase model's explainability
+- Make a decision whether to deploy the model
+- Document the evaluation phase |
+| Model Deployment | - Evaluate model under production condition
+- Assure user acceptance and usability
+- Model governance
+- Deploy according to the selected strategy (A/B testing, multi-armed bandits) |
+| Model Monitoring and Maintenance | - Monitor the efficiency and efficacy of the model prediction serving
+- Compare to the previously specified success criteria (thresholds)
+- Retrain model if required
+- Collect new data
+- Perform labelling of the new data points
+- Repeat tasks from the *Model Engineering* and *Model Evaluation* phases
+- Continuous, integration, training, and deployment of the model |
+
 ## 📈 Key Improvements from Industry Research & CRISP-ML(Q) + LLM/AI Alignment
 
 - **CRISP-ML(Q) Structure**: Organized directories by CRISP-ML(Q) phases for systematic ML development
@@ -370,3 +412,4 @@ Each directory contains **nodes** - reusable components that can be combined to 
 🧪 Dev/Test: Development and testing components
 🌐 Prod: Production systems and operations
 ```
+
