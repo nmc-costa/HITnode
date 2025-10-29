@@ -128,9 +128,8 @@ datasets/                        # 📥 Data I/O: Ingestion, loading, and saving
 
 preprocessing/                   # 🛠️ Data transformations: Cleaning and feature engineering
 ├── cleaners/                   # 🧹 Transform: Data cleaning and quality improvement nodes
-├── transformations/            # 🔄 Transform: Data type conversions and transformations
+├── transformations/            # 🔄 Transform: Data type conversions and transformations (Linear: scaling min-max and z-scores, Non-linear: Log, exponential to change distributions)
 ├── feature_engineering/        # ⚙️ Transform: Feature creation, selection, and extraction
-├── normalizers/                # 📏 Transform: Data normalization and scaling
 ├── splitters/                  # ✂️ Transform: Train/validation/test data splitting
 ├── text_processors/            # 📝 Transform: Text preprocessing for NLP and LLM applications
 ├── tokenizers/                 # 🔤 Transform: Tokenization nodes for various models and frameworks
